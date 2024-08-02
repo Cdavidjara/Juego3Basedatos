@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 using Photon.Pun;
 
-public class launch : MonoBehaviourPunCallbacks
+
+public class Laucher : MonoBehaviourPunCallbacks
 {
-    public PhotonView personPrefab;
-    public Transform puntoReferencia;
+
+
+    public PhotonView personajePrefab;
+    public Transform PuntoReferencia;
+    // Start is called before the first frame update
     void Start()
     {
         PhotonNetwork.ConnectUsingSettings();
@@ -14,14 +19,14 @@ public class launch : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
-        Debug.Log("Connection success");
+        Debug.Log("Coneccion satisfactoria..!!");
         PhotonNetwork.JoinRandomOrCreateRoom();
 
     }
+
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.Instantiate(personPrefab.name, puntoReferencia.position, puntoReferencia.rotation);
+       PhotonNetwork.Instantiate(personajePrefab.name, PuntoReferencia.position, PuntoReferencia.rotation);
+        
     }
-
-
 }

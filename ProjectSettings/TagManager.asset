@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - objetivo
+  - textomision
+  - boton
+  - bomba
+  - textogameover
+  - panel
+  - textoTemporizador
   layers:
   - Default
   - TransparentFX

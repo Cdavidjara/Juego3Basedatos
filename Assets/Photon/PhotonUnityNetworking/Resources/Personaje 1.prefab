@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b9911a8cd6ed2d45a67b4635021cfd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicaPersonaje1: {fileID: 8058494782790960749}
+  logicaPersonaje1: {fileID: 2601669993978589729}
 --- !u!1001 &133913140915487841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87,15 +87,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.77
+      value: -10.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.049
+      value: -0.76
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.89
+      value: 13.92
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1493,12 +1493,6 @@ PrefabInstance:
       addedObject: {fileID: 1309157205365260127}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8669033583690156579}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8058494782790960749}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2601669993978589729}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
       insertIndex: -1
@@ -1509,6 +1503,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
       insertIndex: -1
       addedObject: {fileID: -6317051880553524752}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5132546504789751348}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5196951463293849136}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2843602821919915325}
   m_SourcePrefab: {fileID: 100100000, guid: 0adfc989f18f3e94caa2be2bc7a9a81a, type: 3}
 --- !u!4 &455277218008605578 stripped
 Transform:
@@ -1547,51 +1550,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!136 &8669033583690156579
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944252456350218544}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.36517394
-  m_Height: 1.9704595
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.88410187, z: -0.05101472}
---- !u!114 &8058494782790960749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944252456350218544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08cdcdd8cda3e314bbe85ca7885836f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadMovimiento: 5
-  velocidadRotacion: 250
-  x: 0
-  y: 0
-  rb: {fileID: 1309157205365260127}
-  fuerzaDeSalto: 10
-  puedoSaltar: 0
-  nivelPersonaje: 0
-  personPrefab: {fileID: 0}
-  puntoReferencia: {fileID: 0}
 --- !u!114 &2601669993978589729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1609,11 +1567,14 @@ MonoBehaviour:
   x: 0
   y: 0
   rb: {fileID: 0}
-  fuerzaDeSalto: 8
+  fuerzaDeSalto: 13
   puedoSaltar: 0
   nivelPersonaje: 0
-  personPrefab: {fileID: 0}
+  personPrefab: {fileID: 1536144831144071134}
   puntoReferencia: {fileID: 0}
+  velocidadInicial: 0
+  velocidadAgachado: 0
+  fuerzaExtra: 2
 --- !u!114 &488327389588567799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1627,9 +1588,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numDeObjetivos: 0
-  textoMision: {fileID: 0}
-  botonDeMision: {fileID: 0}
-  logicaPersonaje1: {fileID: 8058494782790960749}
+  cantidadInicialDeEsferas: 0
+  tiempoTotal: 60
 --- !u!114 &1536144831144071134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1650,6 +1610,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: -6317051880553524752}
+  - {fileID: 5132546504789751348}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -1686,3 +1647,79 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &5132546504789751348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944252456350218544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 1
+    SynchronizeType: 0
+    Name: Blend
+  - Type: 1
+    SynchronizeType: 1
+    Name: VelX
+  - Type: 1
+    SynchronizeType: 1
+    Name: VelY
+  - Type: 4
+    SynchronizeType: 1
+    Name: salte
+  - Type: 4
+    SynchronizeType: 1
+    Name: tocoSuelo
+  - Type: 4
+    SynchronizeType: 0
+    Name: agachado
+  m_SynchronizeLayers:
+  - SynchronizeType: 1
+    LayerIndex: 0
+--- !u!114 &-5196951463293849136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944252456350218544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac963fc15efbf0f48a24400bff1307c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 6
+  height: 3
+  centerOffset: {x: 0, y: 0, z: 0}
+  followOnStart: 0
+  smoothSpeed: 5
+--- !u!136 &2843602821919915325
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944252456350218544}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.36517394
+  m_Height: 1.9704595
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.88410187, z: -0.05101472}
